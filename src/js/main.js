@@ -29,11 +29,11 @@ startBtn.addEventListener('click', function() {
     time = prompt ("Введите дату в формате YYYY-MM-DD", "");
     money = +prompt ("Ваш бюджет на месяц?", "");
 
-    while (isNaN(money) || money == "" || money == null) {
-        money = +prompt ("Ваш бюджет на месяц?", ""); 
+    while (isNaN(money) || money == "" || money == null) { /* isNaN - Проверка на числовое значение */
+        money = +prompt ("Ваш бюджет на месяц?", "");
     }
     while ( time == "" || time == null) {
-        time = +prompt ("Введите дату в формате YYYY-MM-DD", ""); 
+        time = +prompt ("Введите дату в формате YYYY-MM-DD", "");
     }
 
     appData.budget = money;
